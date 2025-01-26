@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#tree {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+.node {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    background: #69b3a2;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+}
+
+.children {
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.generation-1 .node {
+    background: #1b263b; /* Color for generation 1 */
+}
+
+.generation-2 .node {
+    background: #57a0ce; /* Color for generation 2 */
+}
+
+.generation-3 .node {
+    background: #ffa500; /* Color for generation 3 */
+}
+
+.generation-4 .node {
+    background: #ff7575; /* Color for generation 4 */
+}
